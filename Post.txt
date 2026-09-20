@@ -1,0 +1,53 @@
+300 Repositories and Counting!
+
+
+
+I've just hit a major personal milestone: 300 public repositories on GitHub.
+
+
+
+Over a career spanning three decades in systems engineering, high-performance computing, and game engine architecture, building code has been more than a profession; it's been a continuous exploration of first principles.
+
+
+
+Looking back across these 300 codebases, a few stand out as defining reflections of my work in low-latency systems, distributed architectures, and modern C++/Rust engineering:
+
+
+
+KAI: My 20+ year multi-language passion project and magnum opus - a distributed object model framework featuring custom language translators, an executor, and an incremental tri-color garbage collector.
+
+
+
+ShFar: A high-performance command-line find-and-replace utility coupling filename globbing and parallel content searching with a custom C++23 substitution engine.
+
+
+
+PyLocalEnsemble: An offline, local-first multi-agent chat and image orchestration framework written in Python to manage local agent state entirely without cloud dependencies.
+
+
+
+CppCompileTimeRenderer: A C++20 compile-time ray tracer that executes rendering entirely via constexpr machinery, outputting ASCII art through intentional static assertion failures.
+
+
+
+ScalaDescent: An endless runner game demo featuring fractal tunnels and Signed Distance Field geometry written in Scala 3 to run entirely on a CPU-bound ray marcher.
+
+
+
+RustBinaryTree: A memory-efficient, generic binary search tree implementation in modern Rust complete with robust test suites and zero-cost iterators.
+
+
+
+Whether I'm optimising low-level memory management, engineering robust concurrency models, or building local-first developer infrastructure, I love solving complex, high-throughput problems.
+
+
+
+If your team is working on high-performance computing, systems architecture, or complex engine engineering and you're looking for a seasoned Principal Engineer who builds from the ground up, let's connect!
+
+
+
+Check out the code on GitHub: https://github.com/cschladetsch
+
+#SystemsEngineering #CPlusPlus #RustLang #Python #SoftwareArchitecture #HighPerformanceComputing #OpenSource
+o
+
