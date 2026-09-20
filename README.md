@@ -1,4 +1,4 @@
-# RustBinaryTree (`cschladetsch/RustBinaryTree`)
+# RustBinaryTree 
 
 A high-performance, memory-efficient, and generic Binary Search Tree (BST) implementation in modern Rust, engineered for systems programming, low-latency applications, and extensible tree-based data structures.
 
