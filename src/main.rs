@@ -19,15 +19,43 @@ impl<T: Ord> BinaryTree<T> {
     }
 
     pub fn insert(&mut self, value: T) {
-        // TODO: Implement insertion
-        // Challenge: How do you traverse and mutate the tree
-        // without violating Rust's ownership rules?
+        Self::insert_recursive(&mut self.root, value);
+    }
+
+    fn insert_recursive(node: &mut Option<Box<Node<T>>>, value: T) {
+        match node {
+            None => {
+                *node = Some(Box::new(Node {
+                    value,
+                    left: None,
+                    right: None,
+                }));
+            }
+            Some(n) => {
+                match value.cmp(&n.value) {
+                    Ordering::Less => Self::insert_recursive(&mut n.left, value),
+                    Ordering::Greater => Self::insert_recursive(&mut n.right, value),
+                    Ordering::Equal => {} // Duplicate, do nothing
+                }
+            }
+        }
     }
 
     pub fn contains(&self, value: &T) -> bool {
-        // TODO: Implement search
-        // This is easier than insert - immutable traversal
-        false
+        Self::contains_recursive(&self.root, value)
+    }
+
+    fn contains_recursive(node: &Option<Box<Node<T>>>, value: &T) -> bool {
+        match node {
+            None => false,
+            Some(n) => {
+                match value.cmp(&n.value) {
+                    Ordering::Equal => true,
+                    Ordering::Less => Self::contains_recursive(&n.left, value),
+                    Ordering::Greater => Self::contains_recursive(&n.right, value),
+                }
+            }
+        }
     }
 }
 
